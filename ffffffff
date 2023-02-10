@@ -60,6 +60,4 @@ getgenv().GetNearestTarget = function()
                 table.insert(DISTANCES, DIFF)
             elseif getgenv().TeamCheck == false and v.Team == Client.Team then 
                 local DISTANCE = (v.Character:FindFirstChild("Head").Position - game.Workspace.CurrentCamera.CFrame.p).magnitude
-                local RAY = Ray.new(game.Workspace.CurrentCamera.CFrame.p, (Mouse.Hit.p - game.Workspace.CurrentCamera.CFrame.p).unit * DISTANCE)
-                local HIT,POS = game.Workspace:FindPartOnRay(RAY, game.Workspace)
-                local DIFF
+                local RAY = Ray.new(game.Workspace.CurrentCamera.CFrame.p, (Mouse.Hit.p - game.Workspace.CurrentCamera.CFrame.p
